@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            let Result = [];
+        function mySecondFunction (number) {
+            
+            for (let i=1; i<=100; i++) {
+            if (i % 2 == 0) {
+                Result.push("yu");
+            }
+            else if (i % 3 == 0) {
+                Result.push("gi");
+            }
+            else if (i % 5 == 0) {
+                Result.push("oh");   
+            }
+                 
+            else if (i % 2 == 0 && i % 3 == 0) {
+                Result.push("yu-gi");
+            }
+            else if (i % 3 == 0 && i % 5== 0) {
+                Result.push("gi-oh");
+            }
+            else if (i%2==0 && i%5==0) {
+                Result.push("yu-oh");
+            }
+            else if (i % 2 == 0 && i % 3  ==  0 && i % 5 == 0) {
+                Result.push("yu-gi-oh");
+            }
+            else {
+                Result.push(i);
+            }
+            console.log(Result);
+            return Result
+            
+            }
+        } 
+         let x = 100;
+         let y = 67
+         let z = mySecondFunction (x,y);
+         console.log(z);
+         
+
+
+
+        console.log ("it works");
+        
+        
+        </script>
+    </body>
+</html>
